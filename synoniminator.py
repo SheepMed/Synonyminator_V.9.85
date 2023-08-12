@@ -35,7 +35,7 @@ def find_words(is_synonym=True):
     words = fetch_words(word, is_synonym)
     display_words(words, word, is_synonym)
 app = tk.Tk()
-app.title("Synonym and Antonym Finder")
+app.title("Sheep Synonyminator")
 label_word = tk.Label(app, text="Enter a word:")
 entry_word = tk.Entry(app)
 button_find_synonyms = tk.Button(app, text="Find Synonyms", command=lambda: find_words(is_synonym=True))
